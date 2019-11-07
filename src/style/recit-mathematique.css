@@ -144,25 +144,56 @@ h5 a.style_btn_1:hover {
 /*-------------------------------*\
     Glosaire
 \*-------------------------------*/
-#intro.box.generalbox.py-3 {
-  padding-left: 20px;
-  padding-right: 20px;
+/*#intro.box.generalbox.py-3 p:first-of-type  {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: $white;
+    background: $theme_color1;
+}
+#intro.box.generalbox.py-3 p:first-of-type {
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+}
+#intro.box.generalbox.py-3 p:first-of-type:before {
+    display: block;
+    content: '';
+    width: 47px;
+    height: 54px;
+    margin: 0 auto 5px;
+    background: url("https://recitfad.ca/widgets/assets/images/ico-glossaire.svg") ;
+	background-repeat: no-repeat;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+}
+*/
+#page-mod-quiz-view .card-body h2:first-of-type {
+  /*padding-left: 20px;
+  padding-right: 20px;*/
+  vertical-align: baseline;
   color: #ffffff;
   background: #007a76; }
 
-#intro.box.generalbox.py-3 p {
+#page-mod-quiz-view .card-body h2:first-of-type {
+  /*margin-left: 50px;*/
   margin-bottom: 0;
   font-weight: 700;
   font-size: 22px;
-  text-align: center; }
+  /*text-align: center;*/ }
 
-#intro.box.generalbox.py-3 p:before {
-  display: block;
+#page-mod-quiz-view .card-body h2:first-of-type:before {
+  display: inline-block;
+  /*padding-right:50px;*/
   content: '';
   width: 47px;
-  height: 54px;
-  margin: 0 auto 5px;
-  background: url("https://recitfad.ca/widgets/assets/images/ico-glossaire.svg");
+  height: 47px;
+  vertical-align: middle;
+  /* margin: 0 auto 5px;*/
+  background: url("https://recitfad.ca/widgets/assets/images/target.svg");
+  background-repeat: no-repeat;
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
   -o-background-size: 100% auto;
