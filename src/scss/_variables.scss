@@ -1,0 +1,518 @@
+@font-face {
+    font-family: 'fjalla_oneregular';
+    src: url('../../../recit_mathematique/scss/fjallaone-regular-webfont.woff2') format('woff2'),
+    url('../../../recit_mathematique/scss/fjallaone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-family-sans-serif: "Ubuntu", sans-serif, !default;
+$subheadings-font-family:"Viga";
+$headings-font-family:"fjalla_oneregular";
+$figuretexte: "Ubuntu", sans-serif;
+
+$primary:#4b4a4e;
+$secondary:#007d79;
+$secondarypale:#0082C6;
+$success:#009bcd;
+$danger:#f5af1b;
+$info:#d0181e;
+$warning:#FFE869;
+$light:#FDFBF7;
+$dark:#555555;
+$black:#040506;
+$white:#ffffff;
+$secondaryrecit:#59B5BE;
+
+$color1:#FFFFFF;
+$color2:#FFFFFF;
+$color3:#FFFFFF;
+$color4:#FFFFFF;
+$color5:#FFFFFF;
+
+$theme_color1:#007a76;
+$theme_color2:#f6b100;
+$theme_color3:#ef783b;
+$theme_color4:#68b459;
+
+$btn-radius: 30px;
+$navbar-header-color: #fff !default;
+$body-color: #373a3c;
+$page-max-width: 1520px;
+
+$brand-primary: $primary;					 
+$headings-font-family: $font-family-sans-serif !default;
+$headings-font-weight: 400 !default;
+$headings-color: $primary !default;
+
+$body-bg: #eef5f9 !default;
+
+$card-border-radius: 0 !default;
+$card-border-color: #d7dfe3 !default;
+
+$navbar-height: 50px !default;
+$navbar-bg: $secondary !default;
+$navbar-bg-hover: $danger !default;
+$navbar-separator: $danger !default;
+
+$calendarEventCategoryColor: #fc4b6c !default;
+$calendarEventCourseColor: #7460ee !default;
+$calendarEventGlobalColor: #1e88e5 !default;
+$calendarEventGroupColor: #ffb22b !default;
+$calendarEventUserColor: #26c6da !default;
+
+$m-login-padding: 10px;
+$m-login-boxheight: 350px;
+$m-card-padding: 1.25rem;
+$m-moodle-color: #f98012 !default;
+$m-facebook-color: #3b5998 !default;
+$m-twitter-color: #55acee !default;
+$m-youtube-color: #cc181e !default;
+$m-googleplus-color: #d34836 !default;
+$m-linkedin-color: #007bb5 !default;
+$m-instagram-color: #8a3ab9 !default;
+
+$carousel-control-color: #fff !default;
+$carousel-control-prev-icon-bg: "data:image/svg+xml;charset=utf8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' fill=\'#fff\' viewBox=\'0 0 8 8\'%3E%3Cpath d=\'M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z\'/%3E%3C/svg%3E" !default;
+$carousel-control-next-icon-bg: "data:image/svg+xml;charset=utf8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' fill=\'#fff\' viewBox=\'0 0 8 8\'%3E%3Cpath d=\'M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z\'/%3E%3C/svg%3E" !default;
+
+
+body, h4, h5 {
+    font-family: $font-family-sans-serif;
+}
+h1, h2 {
+    font-family: $headings-font-family;
+}
+h3 {
+    font-family: $headings-font-family !important;
+}
+/*-------------------------------*\
+    PAGE HEADER
+\*-------------------------------*/
+/*#page-header {
+	height:130px!important;
+    .card {
+		height:130px;
+		background: black;
+		background-image: url("https://recitfad.ca/depot/histoire4/banerehs.png");
+		background-repeat: no-repeat;
+		background-size: 2017px 130px !important;
+        background-position: top right !important;
+     }
+}*/
+
+/*-------------------------------*\
+    Buttons - Bars
+\*-------------------------------*/
+/*-- Button 1 --*/
+.recit-btn,.recit-btn-style_btn_1,h5 a,
+h5 a.style_btn_1,
+.submit.btn.btn-default {
+    display: inline-block;
+    padding: 12px 12px 14px;
+    margin: 0 2px 4px 2px;
+    color: $theme_color1;
+    border: solid 1px $theme_color1;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background: #ffffff;
+    background: -moz-linear-gradient(-70deg,  #ffffff 0%, #ffffff 50%, #e3ebeb 50%, #e3ebeb 100%);
+    background: -webkit-linear-gradient(-70deg,  #ffffff 0%,#ffffff 50%,#e3ebeb 50%,#e3ebeb 100%);
+    background: linear-gradient(160deg,  #ffffff 0%,#ffffff 50%,#e3ebeb 50%,#e3ebeb 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e3ebeb',GradientType=1 );
+}
+.submit.btn.btn-default {
+    padding: 12px 12px 11px;
+}
+.recit-btn-style_btn_1:hover,h5 a:hover,
+h5 a.style_btn_1:hover {
+    color: $theme_color1;
+    border: solid 1px $theme_color1;
+    text-decoration: none;
+    background: #e1e3e4;
+    background: -moz-linear-gradient(-70deg,  #e1e3e4 0%, #e1e3e4 50%, #cdd4d4 50%, #cdd4d4 100%);
+    background: -webkit-linear-gradient(-70deg,  #e1e3e4 0%,#e1e3e4 50%,#cdd4d4 50%,#cdd4d4 100%);
+    background: linear-gradient(160deg,  #e1e3e4 0%,#e1e3e4 50%,#cdd4d4 50%,#cdd4d4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e3e4', endColorstr='#cdd4d4',GradientType=1 );
+}
+/*-- Button 2 --*/
+.recit-btn-style_btn_2,h5 a.style_btn_2,
+.submit.btn.btn-default {
+    color: $theme_color4;
+    border: solid 1px $theme_color4;
+    background: #ffffff;
+    background: -moz-linear-gradient(-70deg,  #ffffff 0%, #ffffff 50%, #edf7ec 50%, #edf7ec 100%);
+    background: -webkit-linear-gradient(-70deg,  #ffffff 0%,#ffffff 50%,#edf7ec 50%,#edf7ec 100%);
+    background: linear-gradient(160deg,  #ffffff 0%,#ffffff 50%,#edf7ec 50%,#edf7ec 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#edf7ec',GradientType=1 );
+}
+.recit-btn-style_btn_5:hover,h5 a.style_btn_2:hover,
+.submit.btn.btn-default:hover, .submit.btn.btn-default:focus, .submit.btn.btn-default:active {
+    color: $theme_color4;
+    border: solid 1px $theme_color4;
+    background: #e1e3e4;
+    background: -moz-linear-gradient(-70deg,  #e1e3e4 0%, #e1e3e4 50%, #cdd4d4 50%, #cdd4d4 100%);
+    background: -webkit-linear-gradient(-70deg,  #e1e3e4 0%,#e1e3e4 50%,#cdd4d4 50%,#cdd4d4 100%);
+    background: linear-gradient(160deg,  #e1e3e4 0%,#e1e3e4 50%,#cdd4d4 50%,#cdd4d4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e3e4', endColorstr='#cdd4d4',GradientType=1 );
+}
+/*-- Button 3 --*/
+.recit-btn-style_btn_3,h5 a.style_btn_3 {
+    color: $theme_color3;
+    border: solid 1px $theme_color3;
+    background: #ffffff;
+    background: -moz-linear-gradient(-70deg,  #ffffff 0%, #ffffff 50%, #edf7ec 50%, #edf7ec 100%);
+    background: -webkit-linear-gradient(-70deg,  #ffffff 0%,#ffffff 50%,#edf7ec 50%,#edf7ec 100%);
+    background: linear-gradient(160deg,  #ffffff 0%,#ffffff 50%,#edf7ec 50%,#edf7ec 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#edf7ec',GradientType=1 );
+}
+.recit-btn-style_btn_3:hover,h5 a.style_btn_3:hover {
+    color: $theme_color3;
+    border: solid 1px $theme_color3;
+    background: #e1e3e4;
+    background: -moz-linear-gradient(-70deg,  #e1e3e4 0%, #e1e3e4 50%, #cdd4d4 50%, #cdd4d4 100%);
+    background: -webkit-linear-gradient(-70deg,  #e1e3e4 0%,#e1e3e4 50%,#cdd4d4 50%,#cdd4d4 100%);
+    background: linear-gradient(160deg,  #e1e3e4 0%,#e1e3e4 50%,#cdd4d4 50%,#cdd4d4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e3e4', endColorstr='#cdd4d4',GradientType=1 );
+}
+/*-- Button 4 --*/
+.recit-btn-style_btn_4,h5 a.style_btn_4 {
+    color: $white;
+    border: solid 1px $theme_color1;
+    background: $theme_color1;
+}
+.recit-btn-style_btn_4:hover,h5 a.style_btn_4:hover {
+    color: $white;
+    border: solid 1px $black;
+    background: $black;
+}
+/*-- Button 5 --*/
+.recit-btn-style_btn_5,h5 a.style_btn_5 {
+    color: $white;
+    border: solid 1px $theme_color4;
+    background: $theme_color4;
+}
+.recit-btn-style_btn_5:hover,h5 a.style_btn_5:hover {
+    color: $white;
+    border: solid 1px $black;
+    background: $black;
+}
+/*-- Button 6 --*/
+.recit-btn-style_btn_6,h5 a.style_btn_6 {
+    color: $black;
+    border: solid 1px $theme_color2;
+    background: $theme_color2;
+}
+.recit-btn-style_btn_6:hover,h5 a.style_btn_6:hover {
+    color: $white;
+    border: solid 1px $black;
+    background: $black;
+}
+/*-------------------------------*\
+    Glosaire
+\*-------------------------------*/
+#intro.box.generalbox.py-3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: $white;
+    background: $theme_color1;
+}
+#intro.box.generalbox.py-3 p {
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+}
+#intro.box.generalbox.py-3 p:before {
+    display: block;
+    content: '';
+    width: 47px;
+    height: 54px;
+    margin: 0 auto 5px;
+    background: url("https://recitfad.ca/widgets/assets/images/ico-glossaire.svg");
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+}
+.form.form-inline.m-b-1 {
+    padding: 20px 20px 0;
+    background: $theme_color2;
+    margin-bottom: 0 !important;
+}
+.form.form-inline.m-b-1 .form-control {
+    border: solid 1px $theme_color1;
+    margin: 0 4px 4px 0;
+}
+.form.form-inline.m-b-1 .form-control:focus {
+    border-color: $theme_color1;
+    -webkit-box-shadow: 0 0 0 .2rem $theme_color4;
+    box-shadow: 0 0 0 .2rem $theme_color4;
+}
+.form.form-inline.m-b-1 input[type="radio"], .form.form-inline.m-b-1 input[type="checkbox"] {
+    margin-right: 4px;
+}
+.btn.btn-secondary.m-r-1,
+.form.form-inline.m-b-1 .btn.btn-secondary {
+    color: $white;
+    border-color: transparent;
+    font-weight: 700;
+    margin-bottom: 4px;
+    background: $theme_color1;
+}
+.btn.btn-secondary.m-r-1:hover,
+.btn.btn-secondary.m-r-1:active,
+.form.form-inline.m-b-1 .btn.btn-secondary:hover,
+.form.form-inline.m-b-1 .btn.btn-secondary:active {
+    color: $white;
+    background: $theme_color4;
+}
+.singlebutton.glossaryaddentry {
+    display: block;
+}
+.singlebutton.glossaryaddentry .form.form-inline.m-b-1 {
+    padding-bottom: 20px;
+}
+.glossaryexplain {
+    padding-top: 20px;
+}
+/*-------------------------------*\
+\*-------------------------------*/
+/*-------------------------------*\
+    Math question
+\*-------------------------------*/
+.alert-info, #page-admin-index .releasenoteslink, #adminsettings .form-overridden, .que .formulation, .assignfeedback_editpdf_widget .label {
+    color: #373a3c ;
+    background-color: #f1f1f1 ;
+    border: solid 1px #ccc ;
+}
+
+/*.submit {
+  backface-visibility: hidden;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;
+  background: linear-gradient(135deg,#fbfbfb 0%,#dee8d2 29.58235359982085%,#edf4e5 49%,#cddbbd 67.92072556264695%, #a6b98f 100%);
+  border-radius: 5px;
+  border: 1px solid #4e8918;
+  border-width: 1px 1px 1px 1px;
+  padding: 10px 20px 10px 20px;
+  box-shadow: inset 0px 1px 0px #ffffff,0px 1px 3px rgba(0,0,0,0.3);
+  color: #4e8918;
+  font-size: 16px;
+  font-family: Helvetica Neue;
+  font-weight: 900;
+  font-style: normal;
+  text-shadow: 0px -1px 0px rgba(0%,0%,0%,0.4)
+  }
+.submit > div {
+  color: #999;
+  font-size: 10px;
+  font-family: Helvetica Neue;
+  font-weight: initial;
+  font-style: normal;
+  text-align: center;
+  margin: 0px 0px 0px 0px
+  }
+.submit > i {
+  font-size: 1em;
+  border-radius: 0px;
+  border: 0px solid transparent;
+  border-width: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  position: static
+  }*/
+
+
+
+@media screen and (min-width: 768px) {
+    #intro.box.generalbox.py-3 p:before {
+        display: inline-block;
+        margin: 0 12px 0 0;
+        float: left;
+    }
+    #intro.box.generalbox.py-3 p {
+        font-size: 27px;
+        line-height: 54px;
+        text-align: left;
+    }
+}
+figure.figure {
+    display: block !important;
+    -webkit-border-radius: 16px !important;
+    -moz-border-radius: 16px !important;
+    border-radius: 16px !important;
+    margin-bottom: 40px !important;
+    overflow: hidden !important;
+    -webkit-box-shadow: 0px 10px 15px 0px rgba(0, 125, 121,0.5) !important;
+    -moz-box-shadow: 0px 10px 15px 0px rgba(0, 125, 121,0.5) !important;
+    box-shadow: 0px 10px 15px 0px rgba(0, 125, 121,0.5) !important;
+}
+/*Change question appearance*/
+.que {
+    
+        max-width: 95%;
+        margin: 15px;
+    }  
+ .que .answernumber {
+  text-indent: -25px!important;
+    font-size:1.5rem;
+    font-size: 12px;
+    padding: 5px;
+    width: 64px;
+    height: 64px;
+    line-height: px;
+    color: #fff;
+    text-align: center;
+    background: $secondary;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 30px;
+    position: relative;
+    left: -40px;
+    margin-top: 50%;
+    margin-bottom: auto;
+  }
+
+ .que [type="radio"]:checked,
+ .que [type="radio"]:not(:checked),
+ .que [type="checkbox"]:checked,
+ .que [type="checkbox"]:not(:checked) {
+      position: absolute;
+      left: -9999px;
+  }
+ .que [type="radio"]:checked + label,
+ .que [type="radio"]:not(:checked) + label,
+ .que [type="checkbox"]:checked + label,
+ .que [type="checkbox"]:not(:checked) + label
+  {
+      position: relative;
+      padding-left: 28px;
+      cursor: pointer;
+      line-height: 20px;
+      display: inline-block;
+      color: #666;
+  }
+  .que [type="radio"]:checked + label:before,
+  .que [type="radio"]:not(:checked) + label:before ,
+  .que [type="checkbox"]:checked + label:before,
+  .que [type="checkbox"]:not(:checked) + label:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 18px;
+      height: 18px;
+      border: 1px solid #ddd;
+      border-radius: 100%;
+      background: #fff;
+  }
+  .que [type="radio"]:checked + label:after,
+  .que [type="radio"]:not(:checked) + label:after,
+  .que [type="checkbox"]:checked + label:after,
+  .que [type="checkbox"]:not(:checked) + label:after {
+      content: '';
+      width: 12px;
+      height: 12px;
+      background: $secondary;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      border-color:  2px $secondary solid ;;
+      border-radius: 100%;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+  }
+ .que [type="radio"]:not(:checked) + label:after,
+  .que [type="checkbox"]:not(:checked) + label:after {
+      opacity: 0;
+      -webkit-transform: scale(0);
+      transform: scale(0);
+  }
+  .que [type="radio"]:checked + label:after,
+  .que [type="checkbox"]:checked + label:after {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+  }
+  .que {
+  .answer label {
+      font-display: block;
+      vertical-align: middle !important;}
+    
+    
+
+  .info {
+    color: $secondary!important;
+    /*background-color: $secondary;
+    opacity: 0.1;*/
+    float: none;
+    width: auto;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 1px;
+    border: 1px solid $secondary;
+    padding-bottom: 15px;
+    border-radius: 10px 10px 0px 0px;
+      border-bottom: 2px $secondary solid ;
+      border-top: 1px  $secondary solid ;
+      border-left: 1px  $secondary solid; 
+      border-right: 1px $secondary solid;
+      padding: 15px;
+    
+  }
+  .content {
+    margin: 0;
+  
+  }
+
+  .answer {
+    padding-left: 40px;
+  
+  }
+
+
+  h3.no {
+    color: $secondary;
+    margin-right: 50px;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    display: inline-block;
+  }
+  span.qno {
+    color: $secondary;
+    font-size: 1.2em;
+  }
+
+  .info > div {
+
+    font-size: 1em;
+    color: $secondary;
+    display: inline-block;
+    margin-right: 25px
+  }
+
+  .info > div.state, .que .info > div.grade {
+    font-size: 0.9em;
+    color: $secondary;
+  }
+
+  .info > div.questionflag, .que .info > div.editquestion {
+    font-weight: bold;
+  }
+
+  .formulation{
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    color: Black;
+    background: white;
+    border-bottom: 1px  $secondary solid;
+    border-top: 0 ;
+    border-left: 1px  $secondary solid; 
+    border-right: 1px $secondary solid;
+  }}
+ .que.multichoice .answer div.r0 label, .que.multichoice .answer div.r1 label, .que.multichoice .answer div.r0 div.specificfeedback, .que.multichoice .answer div.r1 div.specificfeedback {
+    text-indent: -25px !important; 
+  }
