@@ -23,7 +23,7 @@ $dark:#555555;
 $black:#040506;
 $white:#ffffff;
 $secondaryrecit:#59B5BE;
-
+$black:#000;
 $color1:#FFFFFF;
 $color2:#FFFFFF;
 $color3:#FFFFFF;
@@ -101,114 +101,7 @@ h3 {
      }
 }*/
 
-/*-------------------------------*\
-    Buttons - Bars
-\*-------------------------------*/
-/*-- Button 1 --*/
-.recit-btn,.recit-btn-style_btn_1,h5 a,
-h5 a.style_btn_1,
-.submit.btn.btn-default {
-    display: inline-block;
-    padding: 12px 12px 14px;
-    margin: 0 2px 4px 2px;
-    color: $theme_color1;
-    border: solid 1px $theme_color1;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    background: #ffffff;
-    background: -moz-linear-gradient(-70deg,  #ffffff 0%, #ffffff 50%, #e3ebeb 50%, #e3ebeb 100%);
-    background: -webkit-linear-gradient(-70deg,  #ffffff 0%,#ffffff 50%,#e3ebeb 50%,#e3ebeb 100%);
-    background: linear-gradient(160deg,  #ffffff 0%,#ffffff 50%,#e3ebeb 50%,#e3ebeb 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e3ebeb',GradientType=1 );
-}
-.submit.btn.btn-default {
-    padding: 12px 12px 11px;
-}
-.recit-btn-style_btn_1:hover,h5 a:hover,
-h5 a.style_btn_1:hover {
-    color: $theme_color1;
-    border: solid 1px $theme_color1;
-    text-decoration: none;
-    background: #e1e3e4;
-    background: -moz-linear-gradient(-70deg,  #e1e3e4 0%, #e1e3e4 50%, #cdd4d4 50%, #cdd4d4 100%);
-    background: -webkit-linear-gradient(-70deg,  #e1e3e4 0%,#e1e3e4 50%,#cdd4d4 50%,#cdd4d4 100%);
-    background: linear-gradient(160deg,  #e1e3e4 0%,#e1e3e4 50%,#cdd4d4 50%,#cdd4d4 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e3e4', endColorstr='#cdd4d4',GradientType=1 );
-}
-/*-- Button 2 --*/
-.recit-btn-style_btn_2,h5 a.style_btn_2,
-.submit.btn.btn-default {
-    color: $theme_color4;
-    border: solid 1px $theme_color4;
-    background: #ffffff;
-    background: -moz-linear-gradient(-70deg,  #ffffff 0%, #ffffff 50%, #edf7ec 50%, #edf7ec 100%);
-    background: -webkit-linear-gradient(-70deg,  #ffffff 0%,#ffffff 50%,#edf7ec 50%,#edf7ec 100%);
-    background: linear-gradient(160deg,  #ffffff 0%,#ffffff 50%,#edf7ec 50%,#edf7ec 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#edf7ec',GradientType=1 );
-}
-.recit-btn-style_btn_5:hover,h5 a.style_btn_2:hover,
-.submit.btn.btn-default:hover, .submit.btn.btn-default:focus, .submit.btn.btn-default:active {
-    color: $theme_color4;
-    border: solid 1px $theme_color4;
-    background: #e1e3e4;
-    background: -moz-linear-gradient(-70deg,  #e1e3e4 0%, #e1e3e4 50%, #cdd4d4 50%, #cdd4d4 100%);
-    background: -webkit-linear-gradient(-70deg,  #e1e3e4 0%,#e1e3e4 50%,#cdd4d4 50%,#cdd4d4 100%);
-    background: linear-gradient(160deg,  #e1e3e4 0%,#e1e3e4 50%,#cdd4d4 50%,#cdd4d4 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e3e4', endColorstr='#cdd4d4',GradientType=1 );
-}
-/*-- Button 3 --*/
-.recit-btn-style_btn_3,h5 a.style_btn_3 {
-    color: $theme_color3;
-    border: solid 1px $theme_color3;
-    background: #ffffff;
-    background: -moz-linear-gradient(-70deg,  #ffffff 0%, #ffffff 50%, #edf7ec 50%, #edf7ec 100%);
-    background: -webkit-linear-gradient(-70deg,  #ffffff 0%,#ffffff 50%,#edf7ec 50%,#edf7ec 100%);
-    background: linear-gradient(160deg,  #ffffff 0%,#ffffff 50%,#edf7ec 50%,#edf7ec 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#edf7ec',GradientType=1 );
-}
-.recit-btn-style_btn_3:hover,h5 a.style_btn_3:hover {
-    color: $theme_color3;
-    border: solid 1px $theme_color3;
-    background: #e1e3e4;
-    background: -moz-linear-gradient(-70deg,  #e1e3e4 0%, #e1e3e4 50%, #cdd4d4 50%, #cdd4d4 100%);
-    background: -webkit-linear-gradient(-70deg,  #e1e3e4 0%,#e1e3e4 50%,#cdd4d4 50%,#cdd4d4 100%);
-    background: linear-gradient(160deg,  #e1e3e4 0%,#e1e3e4 50%,#cdd4d4 50%,#cdd4d4 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e3e4', endColorstr='#cdd4d4',GradientType=1 );
-}
-/*-- Button 4 --*/
-.recit-btn-style_btn_4,h5 a.style_btn_4 {
-    color: $white;
-    border: solid 1px $theme_color1;
-    background: $theme_color1;
-}
-.recit-btn-style_btn_4:hover,h5 a.style_btn_4:hover {
-    color: $white;
-    border: solid 1px $black;
-    background: $black;
-}
-/*-- Button 5 --*/
-.recit-btn-style_btn_5,h5 a.style_btn_5 {
-    color: $white;
-    border: solid 1px $theme_color4;
-    background: $theme_color4;
-}
-.recit-btn-style_btn_5:hover,h5 a.style_btn_5:hover {
-    color: $white;
-    border: solid 1px $black;
-    background: $black;
-}
-/*-- Button 6 --*/
-.recit-btn-style_btn_6,h5 a.style_btn_6 {
-    color: $black;
-    border: solid 1px $theme_color2;
-    background: $theme_color2;
-}
-.recit-btn-style_btn_6:hover,h5 a.style_btn_6:hover {
-    color: $white;
-    border: solid 1px $black;
-    background: $black;
-}
+
 /*-------------------------------*\
     Glosaire
 \*-------------------------------*/
@@ -240,76 +133,6 @@ h5 a.style_btn_1:hover {
 */
 
 
-#page-mod-quiz-view .card-body h2:first-of-type {
-    /*padding-left: 20px;
-    padding-right: 20px;*/
-	vertical-align: baseline;
-    color: $white;
-    background: $theme_color1;
-}
-#page-mod-quiz-view .card-body h2:first-of-type {
-	/*margin-left: 50px;*/
-    margin-bottom: 0;
-    font-weight: 700;
-    font-size: 22px;
-    /*text-align: center;*/
-}
-#page-mod-quiz-view .card-body h2:first-of-type:before {
-    display: inline-block;
-		/*padding-right:50px;*/
-    content: '';
-    width: 47px;
-    height: 47px;
-	vertical-align: middle;
-   /* margin: 0 auto 5px;*/
-    background: url("https://recitfad.ca/widgets/assets/images/target.svg");
-	background-repeat: no-repeat;
-    -webkit-background-size: 100% auto;
-    -moz-background-size: 100% auto;
-    -o-background-size: 100% auto;
-    background-size: 100% auto;
-}
-.form.form-inline.m-b-1 {
-    padding: 20px 20px 0;
-    background: $theme_color2;
-    margin-bottom: 0 !important;
-}
-.form.form-inline.m-b-1 .form-control {
-    border: solid 1px $theme_color1;
-    margin: 0 4px 4px 0;
-}
-.form.form-inline.m-b-1 .form-control:focus {
-    border-color: $theme_color1;
-    -webkit-box-shadow: 0 0 0 .2rem $theme_color4;
-    box-shadow: 0 0 0 .2rem $theme_color4;
-}
-.form.form-inline.m-b-1 input[type="radio"], .form.form-inline.m-b-1 input[type="checkbox"] {
-    margin-right: 4px;
-}
-.btn.btn-secondary.m-r-1,
-.form.form-inline.m-b-1 .btn.btn-secondary {
-    color: $white;
-    border-color: transparent;
-    font-weight: 700;
-    margin-bottom: 4px;
-    background: $theme_color1;
-}
-.btn.btn-secondary.m-r-1:hover,
-.btn.btn-secondary.m-r-1:active,
-.form.form-inline.m-b-1 .btn.btn-secondary:hover,
-.form.form-inline.m-b-1 .btn.btn-secondary:active {
-    color: $white;
-    background: $theme_color4;
-}
-.singlebutton.glossaryaddentry {
-    display: block;
-}
-.singlebutton.glossaryaddentry .form.form-inline.m-b-1 {
-    padding-bottom: 20px;
-}
-.glossaryexplain {
-    padding-top: 20px;
-}
 /*-------------------------------*\
 \*-------------------------------*/
 /*-------------------------------*\
