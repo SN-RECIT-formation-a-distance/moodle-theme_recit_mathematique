@@ -1,4 +1,7 @@
-@font-face {
+/**************************************
+ * FONTS
+ *************************************/
+ @font-face {
     font-family: 'fjalla_oneregular';
     src: url('../../../recit_mathematique/scss/fjallaone-regular-webfont.woff2') format('woff2'),
     url('../../../recit_mathematique/scss/fjallaone-regular-webfont.woff') format('woff');
@@ -11,6 +14,14 @@ $subheadings-font-family:"Viga";
 $headings-font-family:"fjalla_oneregular";
 $figuretexte: "Ubuntu", sans-serif;
 
+
+
+
+
+/**************************************
+ * COLORS
+ *************************************/
+$enable-gradients: true;
 $primary:#4b4a4e;
 $secondary:#007d79;
 $secondarypale:#0082C6;
@@ -20,10 +31,7 @@ $info:#d0181e;
 $warning:#FFE869;
 $light:#FDFBF7;
 $dark:#555555;
-$black:#040506;
-$white:#ffffff;
-$secondaryrecit:#59B5BE;
-$black:#000;
+
 $color1:#FFFFFF;
 $color2:#FFFFFF;
 $color3:#FFFFFF;
@@ -35,149 +43,13 @@ $theme_color2:#f6b100;
 $theme_color3:#ef783b;
 $theme_color4:#68b459;
 
-$btn-radius: 30px;
-$navbar-header-color: #fff !default;
-$body-color: #373a3c;
-$page-max-width: 1520px;
+/**************************************
+ * GENERAL
+ *************************************/
 
-$brand-primary: $primary;					 
-$headings-font-family: $font-family-sans-serif !default;
-$headings-font-weight: 400 !default;
-$headings-color: $primary !default;
-
-$body-bg: #eef5f9 !default;
-
-$card-border-radius: 0 !default;
-$card-border-color: #d7dfe3 !default;
+$headings-font-family: $headings-font-family !default;
 
 $navbar-height: 50px !default;
-$navbar-bg: $secondary !default;
-$navbar-bg-hover: $danger !default;
-$navbar-separator: $danger !default;
-
-$calendarEventCategoryColor: #fc4b6c !default;
-$calendarEventCourseColor: #7460ee !default;
-$calendarEventGlobalColor: #1e88e5 !default;
-$calendarEventGroupColor: #ffb22b !default;
-$calendarEventUserColor: #26c6da !default;
-
-$m-login-padding: 10px;
-$m-login-boxheight: 350px;
-$m-card-padding: 1.25rem;
-$m-moodle-color: #f98012 !default;
-$m-facebook-color: #3b5998 !default;
-$m-twitter-color: #55acee !default;
-$m-youtube-color: #cc181e !default;
-$m-googleplus-color: #d34836 !default;
-$m-linkedin-color: #007bb5 !default;
-$m-instagram-color: #8a3ab9 !default;
-
-$carousel-control-color: #fff !default;
-$carousel-control-prev-icon-bg: "data:image/svg+xml;charset=utf8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' fill=\'#fff\' viewBox=\'0 0 8 8\'%3E%3Cpath d=\'M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z\'/%3E%3C/svg%3E" !default;
-$carousel-control-next-icon-bg: "data:image/svg+xml;charset=utf8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' fill=\'#fff\' viewBox=\'0 0 8 8\'%3E%3Cpath d=\'M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z\'/%3E%3C/svg%3E" !default;
-
-
-/*body, h4, h5 {
-    font-family: $font-family-sans-serif;
-}
-h1, h2 {
-    font-family: $headings-font-family;
-}
-h3 {
-    font-family: $headings-font-family !important;
-}*/
-/*-------------------------------*\
-    PAGE HEADER
-\*-------------------------------*/
-/*#page-header {
-	height:130px!important;
-    .card {
-		height:130px;
-		background: black;
-		background-image: url("https://recitfad.ca/depot/histoire4/banerehs.png");
-		background-repeat: no-repeat;
-		background-size: 2017px 130px !important;
-        background-position: top right !important;
-     }
-}*/
-
-
-/*-------------------------------*\
-    Glosaire
-\*-------------------------------*/
-/*#intro.box.generalbox.py-3 p:first-of-type  {
-    padding-left: 20px;
-    padding-right: 20px;
-    color: $white;
-    background: $theme_color1;
-}
-#intro.box.generalbox.py-3 p:first-of-type {
-    margin-bottom: 0;
-    font-weight: 700;
-    font-size: 22px;
-    text-align: center;
-}
-#intro.box.generalbox.py-3 p:first-of-type:before {
-    display: block;
-    content: '';
-    width: 47px;
-    height: 54px;
-    margin: 0 auto 5px;
-    background: url("https://recitfad.ca/widgets/assets/images/ico-glossaire.svg") ;
-	background-repeat: no-repeat;
-    -webkit-background-size: 100% auto;
-    -moz-background-size: 100% auto;
-    -o-background-size: 100% auto;
-    background-size: 100% auto;
-}
-*/
-
-
-/*-------------------------------*\
-\*-------------------------------*/
-/*-------------------------------*\
-    Math question
-\*-------------------------------*/
-
-
-/*.submit {
-  backface-visibility: hidden;
-  position: relative;
-  cursor: pointer;
-  display: inline-block;
-  white-space: nowrap;
-  background: linear-gradient(135deg,#fbfbfb 0%,#dee8d2 29.58235359982085%,#edf4e5 49%,#cddbbd 67.92072556264695%, #a6b98f 100%);
-  border-radius: 5px;
-  border: 1px solid #4e8918;
-  border-width: 1px 1px 1px 1px;
-  padding: 10px 20px 10px 20px;
-  box-shadow: inset 0px 1px 0px #ffffff,0px 1px 3px rgba(0,0,0,0.3);
-  color: #4e8918;
-  font-size: 16px;
-  font-family: Helvetica Neue;
-  font-weight: 900;
-  font-style: normal;
-  text-shadow: 0px -1px 0px rgba(0%,0%,0%,0.4)
-  }
-.submit > div {
-  color: #999;
-  font-size: 10px;
-  font-family: Helvetica Neue;
-  font-weight: initial;
-  font-style: normal;
-  text-align: center;
-  margin: 0px 0px 0px 0px
-  }
-.submit > i {
-  font-size: 1em;
-  border-radius: 0px;
-  border: 0px solid transparent;
-  border-width: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
-  margin: 0px 0px 0px 0px;
-  position: static
-  }*/
-
 
 
 
